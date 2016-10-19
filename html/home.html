@@ -1,0 +1,95 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title> Test Page </title>
+  <link rel="stylesheet" type="text/css" href="../css/home.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="../js/addOrRemove.js"></script>
+</head>
+<body>
+  <button id="statistics">Statistics</button>
+  <button id="watchedFrom">Watched From</button>
+  <button id="accountInfo">Account info</button>
+
+<p id="statisticsWapper">This is where stats will go</p>
+<p id="watchedFromWrapper" class="hide">This is where map will go </p>
+<p id="accountInfoWrapper" class="hide">This is where account info will go </p>
+</body>
+
+<script>
+var $statistics = $('#statistics'),
+    $statisticsWapper = $('#statisticsWapper'),
+    statisticsVisible = true;
+
+var $watchedFrom = $('#watchedFrom'),
+    $watchedFromWrapper = $('#watchedFromWrapper'),
+    watchedFromVisible = false;
+
+var $accountInfo = $('#accountInfo'),
+    $accountInfoWrapper = $('#accountInfoWrapper'),
+    accountInfoVisible = false;
+
+// Button 1
+$statistics.click(function(){
+  //If watchedFrom was selected at the time
+  if(watchedFromVisible == true)
+  {
+    removeWatchedFrom();
+    addStatistics();
+    watchedFromVisible = false;
+    statisticsVisible = true;
+  }
+
+  // Else the accountInfo was selected at the time
+  if(accountInfoVisible == true)
+  {
+    removeAccountInfo();
+    addStatistics();
+    accountInfoVisible = false;
+    statisticsVisible = true;
+  }
+});
+
+// Button 2
+$watchedFrom.click(function(){
+  //If statistics was selected at the time
+  if(statisticsVisible == true)
+  {
+    removeStatistics();
+    addWatchedFrom();
+    statisticsVisible = false;
+    watchedFromVisible = true;
+  }
+
+  // Else the accountInfo was selected at the time
+  if(accountInfoVisible == true)
+  {
+    removeAccountInfo();
+    addWatchedFrom();
+    accountInfoVisible = false;
+    watchedFromVisible = true;
+  }
+});
+
+// Button 3
+$accountInfo.click(function(){
+  //If statistics was selected at the time
+  if(statisticsVisible == true)
+  {
+    removeStatistics();
+    addAccountInfo();
+    statisticsVisible = false;
+    accountInfoVisible = true;
+  }
+
+  // Else the watchedFrom was selected at the time
+  if(watchedFromVisible == true)
+  {
+    removeWatchedFrom();
+    addAccountInfo();
+    watchedFromVisible = false;
+    accountInfoVisible = true;
+  }
+});
+</script>
+</html>
