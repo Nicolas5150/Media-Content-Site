@@ -7,13 +7,44 @@
   <script src="../js/addOrRemove.js"></script>
 </head>
 <body>
-  <button id="statistics">Statistics</button>
-  <button id="watchedFrom">Watched From</button>
-  <button id="accountInfo">Account info</button>
+  <header class="header">
+    <img src="../img/logo.png" alt="HTML5 Icon" width="80" height="40">
+    <input class="menu-btn" type="checkbox" id="menu-btn" />
+    <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+    <ul class="menu">
+      <li><a href="#addMedia">Add Media Account</a></li>
+      <li><a href="#profile">Manage Profile</a></li>
+      <li><a href="#logout">Logout</a></li>
+    </ul>
+  </header>
+  <div id="spacingTop"></div>
 
-<p id="statisticsWapper">This is where stats will go</p>
-<p id="watchedFromWrapper" class="hide">This is where map will go </p>
-<p id="accountInfoWrapper" class="hide">This is where account info will go </p>
+  <div class="dataWrapper">
+    <div class="selectionBar">
+      <button id="statistics" class="selectionButton">Statistics</button>
+      <button id="watchedFrom" class="selectionButton">Watched From</button>
+      <button id="accountInfo" class="selectionButton">Account info</button>
+    </div>
+
+    <div class="accountIcon">
+      <img src="../img/Hulu.png" alt="HTML5 Icon" width="36" height="36">
+      <span id="Hulu">Hulu</span>
+    </div>
+
+    <div class="contents">
+      <div id="statisticsWapper">
+        <p>This is where stats will go</p>
+        <img src="../img/loader.png" alt="HTML5 Icon" width="128" height="128">
+      </div>
+
+      <div id="watchedFromWrapper" class="hide">
+        <p>This is where map will go</p>
+        <img src="../img/map.png" id="mapImage" alt="HTML5 Icon" width="128" height="128">
+      </div>
+
+      <div id="accountInfoWrapper" class="hide">This is where account info will go </div>
+    </div>
+  </div>
 </body>
 
 <script>
