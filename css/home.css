@@ -169,16 +169,6 @@ body{
   border-style: solid;
 }
 
-.contents{
-  padding: 10px;
-  border-top: 1px;
-  border-color: #a0a9d2;
-  border-style: solid;
-}
-.selectionBar{
-
-}
-
 /* Three button options */
 .selectionButton {
 	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #b7dbd7), color-stop(1, #6fb4a0));
@@ -213,11 +203,11 @@ body{
 	top:1px;
 }
 
-
-
 .accountIcon{
-  padding-top: 4px;
-  margin-left: 45%;
+  padding-top: 10px;
+  margin-left: 1.5%;
+  float: left;
+  display: inline;
 }
 
 #Hulu{
@@ -226,9 +216,26 @@ body{
   padding-left: 10px;
 }
 
+#statisticsWapper{
+  padding-top: 55px;
+  width: 25%;
+  margin-left: auto ;
+  margin-right: auto ;
+}
+
+.loaderImg{
+  padding-bottom: 25px;
+}
+
 /* Map Styling */
+#watchedFromWrapper{
+  padding-top: 55px;
+}
+
 #mapImage{
   width: 100%;
+  padding-left: 1.5%;
+  padding-right: 1.5%;
   height: auto;
 }
 
@@ -260,5 +267,15 @@ body{
 
   .selectionButton + .selectionButton{
     margin-right : .09%;
+  }
+
+  #statisticsWapper{
+    width: 45%;
+  }
+
+  .loaderImg{
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 25px;
   }
 }
