@@ -1,14 +1,14 @@
-<!DOCTYPE HTML>
-<html>
-<head>
-<title> Test Page </title>
-  <link rel="stylesheet" type="text/css" href="../css/home.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-  <script src="../js/addOrRemove.js"></script>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+    <title> Test Page </title>
+  	<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+    <link rel="stylesheet" type="text/css" href="../css/home.css"/>
 </head>
 <body>
-  <header class="header">
-    <img src="../img/logo.png" alt="HTML5 Icon" width="80" height="40">
+  <div class="header">
+    <img src="../img/logo.png" alt="HTML5 Icon" width="80" height="40"/>
     <input class="menu-btn" type="checkbox" id="menu-btn" />
     <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
     <ul class="menu">
@@ -16,7 +16,7 @@
       <li><a href="#profile">Manage Profile</a></li>
       <li><a href="#logout">Logout</a></li>
     </ul>
-  </header>
+  </div>
   <div id="spacingTop"></div>
 
   <div class="dataWrapper">
@@ -27,100 +27,25 @@
     </div>
 
     <div class="accountIcon">
-      <img src="../img/Hulu.png" alt="HTML5 Icon" width="36" height="36">
+      <img src="../img/Hulu.png" alt="HTML5 Icon" width="36" height="40"/>
       <span id="Hulu">Hulu</span>
     </div>
 
     <div class="contents">
       <div id="statisticsWapper">
         <p>This is where stats will go</p>
-        <img src="../img/loader.png" alt="HTML5 Icon" width="128" height="128">
+        <img src="../img/loader.png" alt="HTML5 Icon" width="128" height="128"/>
       </div>
 
       <div id="watchedFromWrapper" class="hide">
         <p>This is where map will go</p>
-        <img src="../img/map.png" id="mapImage" alt="HTML5 Icon" width="128" height="128">
+        <img src="../img/map.png" id="mapImage" alt="HTML5 Icon" width="128" height="128"/>
       </div>
 
       <div id="accountInfoWrapper" class="hide">This is where account info will go </div>
     </div>
   </div>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script type="text/javascript" src="../js/addOrRemove.js"></script>
 </body>
-
-<script>
-var $statistics = $('#statistics'),
-    $statisticsWapper = $('#statisticsWapper'),
-    statisticsVisible = true;
-
-var $watchedFrom = $('#watchedFrom'),
-    $watchedFromWrapper = $('#watchedFromWrapper'),
-    watchedFromVisible = false;
-
-var $accountInfo = $('#accountInfo'),
-    $accountInfoWrapper = $('#accountInfoWrapper'),
-    accountInfoVisible = false;
-
-// Button 1
-$statistics.click(function(){
-  //If watchedFrom was selected at the time
-  if(watchedFromVisible == true)
-  {
-    removeWatchedFrom();
-    addStatistics();
-    watchedFromVisible = false;
-    statisticsVisible = true;
-  }
-
-  // Else the accountInfo was selected at the time
-  if(accountInfoVisible == true)
-  {
-    removeAccountInfo();
-    addStatistics();
-    accountInfoVisible = false;
-    statisticsVisible = true;
-  }
-});
-
-// Button 2
-$watchedFrom.click(function(){
-  //If statistics was selected at the time
-  if(statisticsVisible == true)
-  {
-    removeStatistics();
-    addWatchedFrom();
-    statisticsVisible = false;
-    watchedFromVisible = true;
-  }
-
-  // Else the accountInfo was selected at the time
-  if(accountInfoVisible == true)
-  {
-    removeAccountInfo();
-    addWatchedFrom();
-    accountInfoVisible = false;
-    watchedFromVisible = true;
-  }
-});
-
-// Button 3
-$accountInfo.click(function(){
-  //If statistics was selected at the time
-  if(statisticsVisible == true)
-  {
-    removeStatistics();
-    addAccountInfo();
-    statisticsVisible = false;
-    accountInfoVisible = true;
-  }
-
-  // Else the watchedFrom was selected at the time
-  if(watchedFromVisible == true)
-  {
-    removeWatchedFrom();
-    addAccountInfo();
-    watchedFromVisible = false;
-    accountInfoVisible = true;
-  }
-});
-</script>
 </html>
