@@ -7,6 +7,7 @@
     <link rel="stylesheet" type="text/css" href="../css/home.css"/>
 </head>
 <body>
+	<!-- Navbar -->
   <div class="header">
     <img src="../img/logo.png" alt="HTML5 Icon" width="80" height="40"/>
     <input class="menu-btn" type="checkbox" id="menu-btn" />
@@ -17,8 +18,9 @@
       <li><a href="#logout">Logout</a></li>
     </ul>
   </div>
-  <div id="spacingTop"></div>
 
+  <div id="spacingTop"></div>
+	<!--Individual media account content wrapper -->
   <div class="dataWrapper">
     <div class="selectionBar">
       <button id="statistics" class="selectionButton">Statistics</button>
@@ -26,25 +28,38 @@
       <button id="accountInfo" class="selectionButton">Account info</button>
     </div>
 
+		<!-- Logo and name of media account -->
     <div class="accountIcon">
       <img src="../img/Hulu.png" alt="HTML5 Icon" width="36" height="40"/>
       <span id="Hulu">Hulu</span>
     </div>
 
+		<!-- Actual contents of media account go here -->
     <div class="contents">
       <div id="statisticsWapper">
         <img class="loaderImg" src="../img/topFive.png" alt="HTML5 Icon" width="128" height="75"/>
-        <img class="loaderImg" src="../img/loader.png" alt="HTML5 Icon" width="128" height="150"/>
+        <img class="loaderImg" src="../img/loader.png" alt="HTML5 Icon" width="128" height="188"/>
         <img class="loaderImg" src="../img/loader-genere.png" alt="HTML5 Icon" width="128" height="188"/>
       </div>
 
+			<!-- Map view -->
       <div id="watchedFromWrapper" class="hide">
         <img src="../img/map.png" id="mapImage" alt="HTML5 Icon" width="128" height="128"/>
       </div>
 
-      <div id="accountInfoWrapper" class="hide">This is where account info will go </div>
+			<!-- Related account to the social media at hand -->
+      <div id="accountInfoWrapper" class="hide">
+				<form action="action_page.php">
+			    <div class="fname">Username</div>
+			    <div><input type="text" id="fname" name="firstname"/></div>
+			    <div class="lname">Password</div>
+			    <div><input type="text" id="lname" name="lastname"/></div>
+			    <div><input type="submit" value="Submit"/></div>
+  			</form>
+			</div>
     </div>
   </div>
+
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script type="text/javascript" src="../js/addOrRemove.js"></script>
 </body>
