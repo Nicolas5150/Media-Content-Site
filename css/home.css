@@ -137,8 +137,13 @@ body{
 
 /* Allowing a space to be created at the top between nav bar and first account */
 #spacingTop{
+  padding-top: 130px;
+}
+
+.spacing{
   padding-top: 75px;
 }
+
 
 /* Cause two of the three itmes to be hidden on load */
 .hide {
@@ -166,8 +171,11 @@ body{
   border-color: #c8e4e1;
   border-style: solid;
   opacity: .8;
-  padding-bottom: 5%;
   width: 100%;
+}
+
+.selectionBar{
+  opacity: .8;
 }
 
 /* Three button options */
@@ -217,35 +225,79 @@ body{
   padding-left: 10px;
 }
 
+#Twitter{
+  color: #4099FF;
+  font-size: 36px;
+  padding-left: 10px;
+}
+
+#Netflix{
+  color: #B9090B;
+  font-size: 36px;
+  padding-left: 10px;
+}
+
 /* Stats on the media acccount */
-#statisticsWapper{
+#statisticsWapperHulu{
+  padding-left: 1%;
+  padding-top: 200px;
+}
+
+#statisticsWapperTwitter{
+  padding-left: 1%;
+  padding-top: 200px;
+}
+
+#statisticsWapperNetflix{
   padding-left: 1%;
   padding-top: 200px;
 }
 
 .loaderImg{
-  height: 28%;
+  height: 19%;
   padding-bottom: 4%;
-  padding-left: 14%;
+  padding-left: 20%;
   padding-right: 2%;
-  width: 28%;
+  width: 19%;
 }
 
 /* Map Styling */
-#watchedFromWrapper{
+#watchedFromWrapperHulu{
   padding-top: 55px;
 }
 
-#mapImage{
+#watchedFromWrapperTwitter{
+  padding-top: 55px;
+}
+
+#watchedFromWrapperNetflix{
+  padding-top: 55px;
+}
+
+.mapImage{
   height: auto;
-  padding-left: 1.5%;
-  width: 97%;
+  padding-bottom: 4%;
+  padding-left: 7.5%;
+  width: 85%;
 }
 
 /* Login information for indvidual media account */
-#accountInfoWrapper{
-  text-align: center;
+#accountInfoWrapperHulu{
+  padding-bottom: 4%;
   padding-top: 200px;
+  text-align: center;
+}
+
+#accountInfoWrapperTwitter{
+  padding-bottom: 4%;
+  padding-top: 200px;
+  text-align: center;
+}
+
+#accountInfoWrapperNetflix{
+  padding-bottom: 4%;
+  padding-top: 200px;
+  text-align: center;
 }
 
 input[type=text], div {
@@ -256,16 +308,15 @@ input[type=text], select {
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
-    color: white;
+    color: black;
     display: inline-block;
     font-size: 14px;
     opacity: .8;
     padding: 12px 20px;
-    width: 50%;
+    width: 70%;
 }
 
-input[type=submit] {
-    background-color: #66AA33;
+.accountSubmitButton {
     border: none;
     border-radius: 4px;
     color: black;
@@ -273,7 +324,19 @@ input[type=submit] {
     font-size: 18px;
     opacity: .9;
     padding: 12px 20px;
-    width: 50%;
+    width: 70%;
+}
+
+.huluButton{
+  background-color: #66AA33;
+}
+
+.twitterButton{
+  background-color: #4099FF;
+}
+
+.netflixButton{
+  background-color: #B9090B;
 }
 
 input[type=submit]:hover {
@@ -302,7 +365,17 @@ input[type=submit]:hover {
     width: 33.33%;
   }
 
-  #statisticsWapper{
+  #statisticsWapperHulu{
+    padding-left: 27%;
+    padding-top: 100px;
+  }
+
+  #statisticsWapperTwitter{
+    padding-left: 27%;
+    padding-top: 100px;
+  }
+
+  #statisticsWapperNetflix{
     padding-left: 27%;
     padding-top: 100px;
   }
@@ -313,11 +386,29 @@ input[type=submit]:hover {
     height: 15%;
     width: 15%;
   }
+
+  input[type=text], select {
+      width: 50%;
+  }
+
+  .accountSubmitButton {
+      width: 50%;
+  }
 }
 
 /* Tablets */
 @media (max-width: 1050px) and (min-width: 724px) {
-  #statisticsWapper{
+  #statisticsWapperHulu{
+    padding-left: 20%;
+    padding-top: 200px;
+  }
+
+  #statisticsWapperTwitter{
+    padding-left: 20%;
+    padding-top: 200px;
+  }
+
+  #statisticsWapperNetflix{
     padding-left: 20%;
     padding-top: 200px;
   }
@@ -327,5 +418,13 @@ input[type=submit]:hover {
     padding-left: 3%;
     padding-right: 2%;
     width: 19%;
+  }
+
+  input[type=text], select {
+      width: 55%;
+  }
+
+  .accountSubmitButton {
+      width: 55%;
   }
 }

@@ -1,7 +1,6 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE HTML>
 	<head>
-    <title> Test Page </title>
+    <title> Media Overview – Nic Emery </title>
   	<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
     <link rel="stylesheet" type="text/css" href="../css/home.css"/>
@@ -9,7 +8,7 @@
 <body>
 	<!-- Navbar -->
   <div class="header">
-    <img src="../img/logo.png" alt="HTML5 Icon" width="80" height="40"/>
+    <img src="../img/logo.png" alt="Logo image" width="80" height="40"/>
     <input class="menu-btn" type="checkbox" id="menu-btn" />
     <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
     <ul class="menu">
@@ -20,47 +19,136 @@
   </div>
 
   <div id="spacingTop"></div>
+	<!-- HULU -->
 	<!--Individual media account content wrapper -->
   <div class="dataWrapper">
     <div class="selectionBar">
-      <button id="statistics" class="selectionButton">Statistics</button>
-      <button id="watchedFrom" class="selectionButton">Watched From</button>
-      <button id="accountInfo" class="selectionButton">Account info</button>
+      <button id="statisticsHulu" class="selectionButton">Statistics</button>
+      <button id="watchedFromHulu" class="selectionButton">Watched From</button>
+      <button id="accountInfoHulu" class="selectionButton">Account info</button>
     </div>
 
 		<!-- Logo and name of media account -->
     <div class="accountIcon">
-      <img src="../img/Hulu.png" alt="HTML5 Icon" width="36" height="40"/>
+      <img src="../img/Hulu.png" alt="Hulu image" width="36" height="40"/>
       <span id="Hulu">Hulu</span>
     </div>
 
 		<!-- Actual contents of media account go here -->
     <div class="contents">
-      <div id="statisticsWapper">
-        <img class="loaderImg" src="../img/topFive.png" alt="HTML5 Icon" width="128" height="75"/>
-        <img class="loaderImg" src="../img/loader.png" alt="HTML5 Icon" width="128" height="188"/>
-        <img class="loaderImg" src="../img/loader-genere.png" alt="HTML5 Icon" width="128" height="188"/>
+      <div id="statisticsWapperHulu">
+        <img class="loaderImg" src="../img/topFive.png" alt="Top 3 watched" width="128" height="75"/>
+        <img class="loaderImg" src="../img/loader.png" alt="Progress circle" width="128" height="188"/>
+        <img class="loaderImg" src="../img/loader-genere.png" alt="Progress circle" width="128" height="188"/>
       </div>
 
 			<!-- Map view -->
-      <div id="watchedFromWrapper" class="hide">
-        <img src="../img/map.png" id="mapImage" alt="HTML5 Icon" width="128" height="128"/>
+      <div id="watchedFromWrapperHulu" class="hide">
+        <img src="../img/map.png" class="mapImage" alt="Google map" width="128" height="128"/>
       </div>
 
 			<!-- Related account to the social media at hand -->
-      <div id="accountInfoWrapper" class="hide">
+      <div id="accountInfoWrapperHulu" class="hide">
 				<form action="action_page.php">
 			    <div class="fname">Username</div>
-			    <div><input type="text" id="fname" name="firstname"/></div>
+			    <div><input type="text" class="fname" name="firstname"/></div>
 			    <div class="lname">Password</div>
-			    <div><input type="text" id="lname" name="lastname"/></div>
-			    <div><input type="submit" value="Submit"/></div>
+			    <div><input type="text" class="lname" name="lastname"/></div>
+					<br><br>
+			    <div><input type="submit" value="Submit" class="huluButton accountSubmitButton"/></div>
   			</form>
 			</div>
     </div>
   </div>
+	<div class="spacing"></div>
+
+	<!-- TWITTER -->
+	<!--Individual media account content wrapper -->
+  <div class="dataWrapper">
+    <div class="selectionBar">
+      <button id="statisticsTwitter" class="selectionButton">Statistics</button>
+      <button id="watchedFromTwitter" class="selectionButton">Watched From</button>
+      <button id="accountInfoTwitter" class="selectionButton">Account info</button>
+    </div>
+
+		<!-- Logo and name of media account -->
+    <div class="accountIcon">
+      <img src="../img/Twitter.jpg" alt="Twitter image" width="36" height="40"/>
+      <span id="Twitter">Twitter</span>
+    </div>
+
+		<!-- Actual contents of media account go here -->
+    <div class="contents">
+      <div id="statisticsWapperTwitter">
+        <img class="loaderImg" src="../img/topFive.png" alt="Top 3 watched" width="128" height="75"/>
+        <img class="loaderImg" src="../img/loader.png" alt="Progress circle" width="128" height="188"/>
+        <img class="loaderImg" src="../img/loader-genere.png" alt="Progress circle" width="128" height="188"/>
+      </div>
+
+			<!-- Map view -->
+      <div id="watchedFromWrapperTwitter" class="hide">
+        <img src="../img/map.png" class="mapImage" alt="Google map" width="128" height="128"/>
+      </div>
+
+			<!-- Related account to the social media at hand -->
+      <div id="accountInfoWrapperTwitter" class="hide">
+				<form action="action_page.php">
+			    <div class="fname">Username</div>
+			    <div><input type="text" class="fname" name="firstname"/></div>
+			    <div class="lname">Password</div>
+			    <div><input type="text" class="lname" name="lastname"/></div>
+					<br><br>
+			    <div><input type="submit" value="Submit" class="twitterButton accountSubmitButton"/></div>
+  			</form>
+			</div>
+    </div>
+  </div>
+	<div class="spacing"></div>
+
+	<!-- NETFLIX -->
+	<!--Individual media account content wrapper -->
+  <div class="dataWrapper">
+    <div class="selectionBar">
+      <button id="statisticsNetflix" class="selectionButton">Statistics</button>
+      <button id="watchedFromNetflix" class="selectionButton">Watched From</button>
+      <button id="accountInfoNetflix" class="selectionButton">Account info</button>
+    </div>
+
+		<!-- Logo and name of media account -->
+    <div class="accountIcon">
+      <img src="../img/Netflix.png" alt="Twitter image" width="36" height="40"/>
+      <span id="Netflix">Netflix</span>
+    </div>
+
+		<!-- Actual contents of media account go here -->
+    <div class="contents">
+      <div id="statisticsWapperNetflix">
+        <img class="loaderImg" src="../img/topFive.png" alt="Top 3 watched" width="128" height="75"/>
+        <img class="loaderImg" src="../img/loader.png" alt="Progress circle" width="128" height="188"/>
+        <img class="loaderImg" src="../img/loader-genere.png" alt="Progress circle" width="128" height="188"/>
+      </div>
+
+			<!-- Map view -->
+      <div id="watchedFromWrapperNetflix" class="hide">
+        <img src="../img/map.png" class="mapImage" alt="Google map" width="128" height="128"/>
+      </div>
+
+			<!-- Related account to the social media at hand -->
+      <div id="accountInfoWrapperNetflix" class="hide">
+				<form action="action_page.php">
+			    <div class="fname">Username</div>
+			    <div><input type="text" class="fname" name="firstname"/></div>
+			    <div class="lname">Password</div>
+			    <div><input type="text" class="lname" name="lastname"/></div>
+					<br><br>
+			    <div><input type="submit" value="Submit" class="netflixButton accountSubmitButton"/></div>
+  			</form>
+			</div>
+    </div>
+  </div>
+	<div class="spacing"></div>
 
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-  <script type="text/javascript" src="../js/addOrRemove.js"></script>
+  <script type="text/javascript" src="../js/manipulate.js"></script>
 </body>
 </html>
