@@ -1,4 +1,17 @@
 @import url("reset.css");
+@font-face {
+    font-family: Sansation_Light;
+    src: url('fonts/Sansation_Light/Sansation_Light.woff');
+}
+@font-face {
+    font-family: Lato_Light;
+    src: url('fonts/Lato_Light/Lato-Light.woff');
+}
+@font-face {
+    font-family: Roboto_Regular;
+    src: url('fonts/Roboto_Regular/Roboto-Regular.woff');
+}
+
 body{
   background-color: #343434;
 }
@@ -31,7 +44,7 @@ body{
   color:#f2e9f2;
   cursor:pointer;
 	display:inline-block;
-	font-family:Arial;
+	font-family: "Sansation_Light", sans-serif;
 	font-size:15px;
 	font-weight:bold;
 	padding:11px 23px;
@@ -191,11 +204,11 @@ body{
 	cursor:pointer;
 	color:#130d14;
   float: left;
-	font-family:Arial;
-	font-size:15px;
+	font-family: "Lato_Light", sans-serif;
+	font-size:18px;
 	font-weight:bold;
   margin-bottom: -3px;
-	padding:7px 23px;
+	padding:4px 20px;
 	text-decoration:none;
   width: 100%;
 }
@@ -221,18 +234,21 @@ body{
 
 #Hulu{
   color: #66AA33;
+  font-family: "Roboto_Regular", sans-serif;
   font-size: 36px;
   padding-left: 10px;
 }
 
 #Twitter{
   color: #4099FF;
+  font-family: "Roboto_Regular", sans-serif;
   font-size: 36px;
   padding-left: 10px;
 }
 
 #Netflix{
   color: #B9090B;
+  font-family: "Roboto_Regular", sans-serif;
   font-size: 36px;
   padding-left: 10px;
 }
@@ -301,7 +317,9 @@ body{
 }
 
 input[type=text], div {
-    color: #c9acd7;}
+    color: #c9acd7;
+    font-family: "Lato_Light", sans-serif;
+  }
 
 input[type=text], select {
     background-color: #d0d4db;
@@ -310,6 +328,7 @@ input[type=text], select {
     box-sizing: border-box;
     color: black;
     display: inline-block;
+    font-family: "Lato_Light", sans-serif;
     font-size: 14px;
     opacity: .8;
     padding: 12px 20px;
@@ -321,6 +340,7 @@ input[type=text], select {
     border-radius: 4px;
     color: black;
     cursor: pointer;
+    font-family: "Lato_Light", sans-serif;
     font-size: 18px;
     opacity: .9;
     padding: 12px 20px;
