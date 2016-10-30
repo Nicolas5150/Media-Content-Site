@@ -16,6 +16,35 @@ body{
   background-color: #343434;
 }
 
+/* Login Section */
+#mainLoginWrapper{
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 20%;
+  text-align: center;
+  width: 70%;
+}
+
+.loginButton{
+  background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #b7dbd7), color-stop(1, #6fb4a0));
+	background:-moz-linear-gradient(top, #b7dbd7 5%, #6fb4a0 100%);
+	background:-webkit-linear-gradient(top, #b7dbd7 5%, #6fb4a0 100%);
+	background:-o-linear-gradient(top, #b7dbd7 5%, #6fb4a0 100%);
+	background:-ms-linear-gradient(top, #b7dbd7 5%, #6fb4a0 100%);
+	background:linear-gradient(to bottom, #b7dbd7 5%, #6fb4a0 100%);
+	background-color:#b7dbd7;
+}
+
+input[type=submit]:hover {
+    color: white;
+}
+
+#loginBackground{
+  background-image: url("../img/logos/login_background.png");
+  background-size: 150% 300%;
+  background-repeat: no-repeat;
+}
+
 /* Navsection and mobile menu */
 .header {
   background: rgba(89,89,89,1);
@@ -291,7 +320,7 @@ body{
 }
 
 .mapImage{
-  height: auto;
+  height: 350px;
   padding-bottom: 4%;
   padding-left: 7.5%;
   width: 85%;
